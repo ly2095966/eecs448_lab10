@@ -13,7 +13,7 @@
 	if ($mysqli->query($userquery)->num_rows) {
 		$postquery = "INSERT INTO Posts (content,author_id) VALUES ('$content','$user_id')";
 		if ($mysqli->query($postquery)) {
-			echo "<p>Txt was posted successfully</p><br />";
+			echo "<p>Text was posted successfully</p><br />";
 			echo "<a href='../index.html'>Back home</a>";
 		} 
 		else {

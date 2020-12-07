@@ -16,8 +16,10 @@
 			if ($result = $mysqli->query($query)) {
 				echo "Deleted post {$post}"; 
 				echo "<br>";
+				echo "<a href='https://people.eecs.ku.edu/~y099l203/eecs448_lab10/exercise4/AdminHome.html'>Back Admin Home</a>";
 			} else {
 				echo "Error: " . $result . "<br>" . $mysqli->error;
+				echo "<a href='https://people.eecs.ku.edu/~y099l203/eecs448_lab10/exercise4/AdminHome.html'>Back Admin Home</a>";
 			}
 		}
 	}
